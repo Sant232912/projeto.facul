@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Remover Usuário</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+    }
+
+    .box {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+      text-align: center;
+      width: 90%;
+      max-width: 400px;
+    }
+
+    h2 {
+      color: #00d4ff;
+      margin-bottom: 20px;
+    }
+
+    input, button {
+      width: 100%;
+      padding: 12px;
+      border-radius: 8px;
+      border: none;
+      margin: 10px 0;
+      font-size: 16px;
+    }
+
+    input {
+      background: #f2f2f2;
+    }
+
+    button {
+      background-color: #00d4ff;
+      color: #000;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #00aacc;
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+   <h2>Remover Usuário</h2>
+<form action="remover_usuario.php" method="POST">
+  <input type="email" name="email" placeholder="E-mail do usuário">
+  <button type="submit">Remover</button>
+</form>
+    <a href="menu.html">Voltar</a>
+  </div>
+</body>
+</html>

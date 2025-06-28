@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Menu Principal</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      color: #fff;
+    }
+
+    .menu {
+      background: rgba(0, 0, 0, 0.6);
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.7);
+      width: 100%;
+      max-width: 500px;
+      text-align: center;
+    }
+
+    h2 {
+      color: #00d4ff;
+      margin-bottom: 30px;
+    }
+
+    .menu button {
+      display: block;
+      width: 100%;
+      padding: 15px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 8px;
+      background-color: #00d4ff;
+      color: #000;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .menu button:hover {
+      background-color: #00aacc;
+    }
+  </style>
+</head>
+<body>
+  <div class="menu">
+    <h2>Menu Principal</h2>
+    <button onclick="location.href='pesquisar_funcionario.html'">Pesquisar Funcionário</button>
+    <button onclick="location.href='pesquisar_produto.html'">Pesquisar Produto</button>
+    <button onclick="location.href='adicionar_usuario.html'">Adicionar Usuário</button>
+    <button onclick="location.href='remover_usuario.html'">Remover Usuário</button>
+    <button onclick="location.href='adicionar_produto.html'">Adicionar Produto</button>
+    <button onclick="location.href='remover_produto.html'">Remover Produto</button>
+    <button> <a href="login.html">Logoff</a></button>
+  </div>
+</body>
+</html>
